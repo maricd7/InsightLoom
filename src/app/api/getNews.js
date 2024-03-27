@@ -1,8 +1,8 @@
-const getDownloads = async ()=> {
-    const res = await fetch('https://www.rtvbn.com/kategorija/fudbal/1');
+const getNews = async()=>{
+    const res = await fetch('https://olx.ba/'); 
     const html = await res.text()
 
-    console.log(html)
+    console.log(html, 'html')
 }
 
-export default getDownloads ; 
+export default getNews
