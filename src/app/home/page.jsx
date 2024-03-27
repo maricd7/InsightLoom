@@ -4,6 +4,10 @@ import Heading from '../_components/common/Heading/Heading'
 import NewsMain from '../_components/NewsMain/NewsMain'
 
 export default function Home() {
+  const getNews = () =>{
+    fetch('http://localhost:3000/api/getNews')
+  }
+  getNews()
   return (
     <div>
       <Nav/>
