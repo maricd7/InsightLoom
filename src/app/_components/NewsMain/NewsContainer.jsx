@@ -12,7 +12,11 @@ function NewsContainer() {
     async function getNews(){
       const res =await fetch(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apikey=${process.env.NEXT_PUBLIC_API_KEY}`)
       const data = await res.json()
-      setNews(data.articles);
+      const fourNews = []
+      for(let i = 0 ; i<4 ;i++){
+        fourNews.push(data.articles[i])
+      }
+      setNews(fourNews);
       console.log(data,  'dejta')
     }
     getNews()
