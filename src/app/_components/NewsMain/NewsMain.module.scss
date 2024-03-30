@@ -6,6 +6,7 @@
     line-height: 1.6rem;
     margin:0.5rem 0 0.25rem  0 ;
     font-family:var(--font-sf);
+
 }
 .newImage{
     border-radius: 0.5rem;
@@ -25,4 +26,12 @@
     display: flex;
     width: 100%;
     gap: 2rem;
+    list-style: none;
+}
+
+
+//link
+.link{
+    color: #212121;
+    text-decoration: none;
 }

@@ -12,7 +12,7 @@ export default async function Home() {
       <Nav/>
       <HeadingNew/>
       <SectionHeading text='Latest News'/>
-      {/* <NewsContainer/> */}
+      <NewsContainer/>
     </div>
   )
 }
