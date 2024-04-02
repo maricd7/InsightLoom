@@ -1,6 +1,7 @@
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Footer from "./_components/Footer/Footer";
+import Nav from "./_components/Nav/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Nav></Nav>
       <body className={inter.className}>{children}</body>
       <Footer/>
     </html>
