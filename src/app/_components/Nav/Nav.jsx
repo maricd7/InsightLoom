@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './Nav.module.scss'
 import NavLink from '../common/NavLink/NavLink'
 import Search from '../Search/Search'
+import Logo from '../common/Logo/Logo'
 
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <h2 className={styles.logo}>InsightLoom</h2>
+      <Logo/>
       <Search/>
       <ul className={styles.links}>
         <NavLink text={'Hottest'} href='./'/>
